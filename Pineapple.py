@@ -50,6 +50,7 @@ class Pineapple(ControlSurface):
     def _setup_session_box(self, width, length):
         with self.component_guard():
             self.session = SessionComponent(width, length)
+            # self.session = SpecialSessionComponent(width, length, 1, [0], [0])
             self.set_highlighting_session_component(self.session)
 
 
@@ -62,20 +63,3 @@ class Pineapple(ControlSurface):
             transport.set_play_button(play_button)
             transport.set_stop_button(stop_button)
             transport.set_record_button(record_button)
-
-
-    def _make_session_box(self, scenes, tracks):
-        # self.session = SessionComponent(scenes, tracks)
-        # self.session.set_offsets(0, 0)
-        # for k in range(session_box_button_count, session_box_button_count +\
-        #         (scenes * tracks)):
-        #     self.session.scene(k - session_box_button_count % scenes)\
-        #         .clip_slot(k - session_box_button_count % tracks).\
-        #         set_launch_button(ButtonElement(False, 0, 8, k))
-        # self.set_highlighting_session_component(self.session)
-        # global session_box_button_count
-        # session_box_button_count = session_box_button_count + \
-        #                            (scenes * tracks)
-        # global session_box_count
-        # session_box_count = session_box_count + 1
-        pass

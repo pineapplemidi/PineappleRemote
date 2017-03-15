@@ -1,8 +1,10 @@
 from _Framework.SessionComponent import SessionComponent
-
+from _Framework.ButtonElement import ButtonElement
+from _Framework.ButtonMatrixElement import ButtonMatrixElement
 
 class SpecialSessionComponent(SessionComponent):
-    def __init__(self, width, height, num_decks, track_offsets, scene_offsets):
+    def __init__(self, width, height, num_decks, track_offsets, scene_offsetsm, \
+                    buttons):
         self.width = width
         self.height = height
         self.decks = self._init_decks(num_decks, track_offsets, scene_offsets)
@@ -15,8 +17,20 @@ class SpecialSessionComponent(SessionComponent):
         return decks
 
 
+    def _add_deck_select_button(self, button, deck):
+        pass
+
+
     def select_deck(self, deck):
         self.set_offsets(decks[deck].track_offset, decks[deck].scene_offset)
+
+
+    def _setup_button_matrix(self):
+        pass
+
+
+    def add_button_to_matrix(self, button, track, scene):
+        pass
 
 
 class Deck(object):
