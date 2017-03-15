@@ -1,8 +1,19 @@
 # remote-script
-
 ### Setup
+```
+cd $HOME/Applications/Ableton/Content/App-Resources/Midi-Remote-Scripts
+```
+```
+git clone {{this repo}}
+```
 
 ### Debug
+```
+cd $HOME/Library/Preferences/Ableton/{{Live withversion}}
+```
+```
+tail -f Log.txt
+```
 
 ### Resources
 http://remotescripts.blogspot.com/2010/04/introduction-to-framework-classes-2.html
