@@ -1,4 +1,4 @@
-# Pineapple Midi Remote Script
+# Pineapple Ableton Midi Remote Script
 ### Setup
 ```
 cd $HOME/Applications/Ableton/Content/App-Resources/Midi-Remote-Scripts
